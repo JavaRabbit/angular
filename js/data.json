@@ -13,5 +13,10 @@
 	"name" 	: "Big Bird",
 	"description": "Big Bird works for Muppets Enterprises in Accounts Payable",
 	"image"	:  "bigbird"
+},
+{
+	"name" 	: "Cookie Monster",
+	"description": "Cookie Monster is a contract employee in Muppets Employee Cafeteria",
+	"image"	:  "cookiemonster"
 }
     ]

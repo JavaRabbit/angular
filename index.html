@@ -14,11 +14,19 @@
 </div>
 	
 <div class="main" ng-controller="GuitarFunction">
+	<div class="search">
+		<h2>Muppets Inc. Directory</h2>
+		<label>Search: </label>
+		<input ng-model="query" placeholder="Search for employees" autofocus>
+
+	</div>
+
 	<ul> 
-	<li class="itemHolder" ng-repeat="item in guitarVariable">
+		<!-- notice the limitTo below (filters) -->
+	<li class="itemHolder" ng-repeat="item in guitarVariable | filter: query">
 	<img ng-src="img/{{item.image}}.jpg">
 		<div>
-			<h3>{{item.name }}</h3>
+			<h3>{{item.name  | uppercase}}</h3>
 			<p> {{item.description}}</p>
 		</div>
 	</a>
