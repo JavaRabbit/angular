@@ -19,11 +19,17 @@
 		<label>Search: </label>
 		<input ng-model="query" placeholder="Search for employees" autofocus>
 
+		<label class="formgroup">by:
+			<select ng-model="employeeOrder">
+				<option value="name">Name:</option>
+				<option value="description">Description:</option>
+			</select>
+		</label>
 	</div>
 
 	<ul> 
 		<!-- notice the limitTo below (filters) -->
-	<li class="itemHolder" ng-repeat="item in guitarVariable | filter: query">
+	<li class="itemHolder" ng-repeat="item in guitarVariable | filter: query | orderBy: employeeOrder">
 	<img ng-src="img/{{item.image}}.jpg">
 		<div>
 			<h3>{{item.name  | uppercase}}</h3>
