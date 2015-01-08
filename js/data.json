@@ -1,17 +1,17 @@
 [
 {
-	"name" 	 : "Acoustic Guitar",
-	"description": "Acoustic, electro-acoustic and classical guitars, from leading brands.",
-	"image"	 :  "Acoustic"
+	"name" 	 : "Miss Piggy",
+	"description": "Miss Piggy is employed as a star actress under Muppets Inc.",
+	"image"	 :  "misspiggy"
 },
 {
-	"name" 	: "Electric Guitar",
-	"description": "Ever-popular solid-body guitars, to hollow-body guitars and archtops.",
-	"image"	:  "Electric"
+	"name" 	: "KErmit de Frog",
+	"description": "Kermit works in the swamp for Muppets Inc.",
+	"image"	:  "kermit"
 },
 {
-	"name" 	: "Bass Guitar",
-	"description": "Classic Fender Bass, Precision and Jazz basses, to Gibson Thunderbirds.",
-	"image"	:  "Bass"
+	"name" 	: "Big Bird",
+	"description": "Big Bird works for Muppets Enterprises in Accounts Payable",
+	"image"	:  "bigbird"
 }
     ]
