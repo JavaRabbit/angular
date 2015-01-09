@@ -25,11 +25,21 @@
 				<option value="description">Description:</option>
 			</select>
 		</label>
+
+		<label class="formgroup">
+			<input type="radio" ng-model="direction" name="direction" checked>
+			ascending
+		</label>
+		<label class="formgroup">
+			<input type="radio" ng-model="direction" name="direction" value="reverse">
+			descending
+		</label>
+
 	</div>
 
 	<ul> 
 		<!-- notice the limitTo below (filters) -->
-	<li class="itemHolder" ng-repeat="item in guitarVariable | filter: query | orderBy: employeeOrder">
+	<li class="itemHolder" ng-repeat="item in guitarVariable | filter: query | orderBy: employeeOrder:direction">
 	<img ng-src="img/{{item.image}}.jpg">
 		<div>
 			<h3>{{item.name  | uppercase}}</h3>
