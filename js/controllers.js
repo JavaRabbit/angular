@@ -4,6 +4,7 @@ nameSpace.controller("GuitarFunction", ['$scope', '$http', function($scope, $htt
 {    
 	$http.get('js/data.json').success(function(data){
 		$scope.guitarVariable = data;
+		$scope.employeeOrder = 'name';
 	}) ;
 }]
 );
