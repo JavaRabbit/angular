@@ -2,7 +2,7 @@
 "name": "MuppetsEmployeeList",
 "version": "0.1.2",
 "description": "A sample Node.js app using Express 4",
-"main": "index.js",
+"main": "index.html",
 
 
 "engines": {
