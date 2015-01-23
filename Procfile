@@ -1,1 +1,1 @@
-web: node index.html
+npm init
