@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<title>Angular Application</title>
 	<link rel="stylesheet" type="text/css" href="styles.css"></link>
-	
+
 	<script src="lib/angular/angular.min.js" type="text/javascript" ></script>
 	<script src="js/controllers.js" type="text/javascript" ></script>
 </head>
@@ -12,7 +12,11 @@
 <div>
 	<h2>Muppets Inc. HR Employee List</h2>
 </div>
-	
+
+
+
+<hr>
+
 <div class="main" ng-controller="GuitarFunction">
 	<div class="search">
 		<h2>Muppets Inc. Directory</h2>
@@ -37,7 +41,7 @@
 
 	</div>
 
-	<ul> 
+	<ul>
 		<!-- notice the limitTo below (filters) -->
 	<li class="itemHolder" ng-repeat="item in guitarVariable | filter: query | orderBy: employeeOrder:direction">
 	<img ng-src="img/{{item.image}}.jpg">
@@ -48,6 +52,24 @@
 	</a>
 	</li>
 </div>
- 
+
+<hr>
+
+<div ng-controller="theController" >
+	<h2>Add a new employee</h2>
+	<form>
+		<label>Employee Name:</label>
+		<input type="text"/></br>
+
+		<label>Employee Description:</label>
+		<input type="text" style="width: 300px"/></br>
+		<label>Employee Image URL:</label>
+		<input type="text" style="width: 300px"/></br>
+		
+		<input type="submit" ng-click="update(user)" value="Save" />
+
+	</form>
+</div>
+
 </body>
 </html>
